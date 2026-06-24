@@ -5,7 +5,7 @@ interface PostTitleItemProps {
   post: Post;
 }
 
-export function PostTitleItem({ post }: PostTitleItemProps) {
+ function PostTitleItem({ post }: PostTitleItemProps) {
   return (
     <div 
       className="flex flex-col bg-white rounded-xl overflow-hidden border border-gray-100 shadow-xs w-full"
@@ -67,3 +67,5 @@ export function PostTitleItem({ post }: PostTitleItemProps) {
     </div>
   );
 }
+
+export default PostTitleItem;

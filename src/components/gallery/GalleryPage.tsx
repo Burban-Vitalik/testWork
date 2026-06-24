@@ -2,7 +2,7 @@ import { useState } from "react";
 import { MOCK_POSTS } from "../../data/mockPosts";
 import { PostRowItem } from "../gallery/PostRowItem";
 import { Button } from "../ui/button";
-import { PostTitleItem } from "./PostTitleItem";
+import PostTitleItem from "./PostTitleItem";
 
 type ViewMode = "rows" | "tiles";
 
