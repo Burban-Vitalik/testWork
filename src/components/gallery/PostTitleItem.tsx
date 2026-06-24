@@ -1,11 +1,11 @@
 import { Heart, MessageCircle } from "lucide-react";
 import type { Post } from "../../data/mockPosts";
 
-interface PostTileItemProps {
+interface PostTitleItemProps {
   post: Post;
 }
 
-export function PostTileItem({ post }: PostTileItemProps) {
+export function PostTitleItem({ post }: PostTitleItemProps) {
   return (
     <div 
       className="flex flex-col bg-white rounded-xl overflow-hidden border border-gray-100 shadow-xs w-full"

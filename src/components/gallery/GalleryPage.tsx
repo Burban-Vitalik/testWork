@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { MOCK_POSTS } from "../../data/mockPosts";
 import { PostRowItem } from "../gallery/PostRowItem";
-import { PostTileItem } from "../gallery/PostTitleItem";
 import { Button } from "../ui/button";
+import { PostTitleItem } from "./PostTitleItem";
 
 type ViewMode = "rows" | "tiles";
 
@@ -40,7 +40,7 @@ export function GalleryPage({ viewMode = "rows" }: GalleryPageProps) {
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5"
         >
           {visiblePosts.map((post) => (
-            <PostTileItem key={post.id} post={post} />
+            <PostTitleItem key={post.id} post={post} />
           ))}
         </div>
       )}
